@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<hhtml>
+    <head>
+        <!-- Import maps polyfill -->
+        <!-- Remove this when import maps will be widely supported -->
+        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "../node_modules/three/build/three.module.js",
+                    "OrbitControls" : "../node_modules/three/examples/jsm/controls/OrbitControls.js",
+                    "three-loop" : "../node_modules/three-loop/dist/three-loop.es.js",
+                    "threemple" : "../src/threemple.m.js"
+                }
+            }
+        </script>
+        <style>
+            html {
+                height : 100%;
+            }
+            body {
+                margin: 0;
+                height: 100%;
+                overscroll-behavior: none;
+            }
+            canvas {
+                display: block;
+                height: 100%;
+            }
+            
+        </style>
+        <script type="module" >
+            import threemple from "threemple";
+            import * as three from "three";
+
+            const VP = threemple();
+            VP.camera.position.z = 200;
+
+            VP.scene.add( new three.Mesh( new three.BoxGeometry(100, 100, 100), new three.MeshBasicMaterial({color:"blue"}) ) );
+            console.log(VP.scene);
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+</hhtml>

@@ -1,0 +1,48 @@
+{
+  "name": "threemple",
+  "version": "0.22.429",
+  "license": "MIT",
+  "description": "simple viewport for three.js",
+  "author": "i3ernie",
+  "repository": "https://github.com/i3ernie/threemple.git",
+  "contributors": [],
+  "keywords": [
+    "three.js",
+    "WebGL",
+    "Viewport"
+  ],
+  "dependencies": {
+    "three": "^0.152"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-better-rollup": "latest",
+    "gulp-rollup": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "jshint": "^2.11.1",
+    "lodash": "latest",
+    "requirejs": "latest",
+    "rollup": "latest",
+    "three-loop": "git+https://github.com/i3ernie/three-loop.git"
+  },
+  "directories": {
+    "example": "examples",
+    "dist": "dist"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/threemple.es.js",
+    "dist/threemple.es.js.map",
+    "dist/threemple.amd.js",
+    "dist/threemple.amd.js.map",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "gulp build",
+    "buildBundles": "rollup -c",
+    "init": "npm install",
+    "update": "npm update"
+  }
+}
