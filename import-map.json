@@ -1,0 +1,7 @@
+{
+    "imports": {
+        "three": "./node_modules/three/build/three.module.js",
+        "OrbitControls" : "./node_modules/three/examples/jsm/controls/OrbitControls.js",
+        "three-loop" : "./node_modules/three-loop/dist/three-loop.es.js"
+    }
+  }
