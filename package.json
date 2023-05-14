@@ -12,18 +12,18 @@
     "Viewport"
   ],
   "dependencies": {
-    "three": "^0.152"
+    "three": "^0.152",
+    "requirejs": "latest"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-better-rollup": "latest",
+    "gulp": "latest",
     "gulp-rollup": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
     "jshint": "^2.11.1",
     "lodash": "latest",
-    "requirejs": "latest",
     "rollup": "latest",
+    "@rollup/plugin-node-resolve" : "latest",
     "three-loop": "git+https://github.com/i3ernie/three-loop.git"
   },
   "directories": {
